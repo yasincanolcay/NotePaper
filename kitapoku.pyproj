@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f6fab3f0-a4d7-4680-b81b-973c7d4a8de0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>kitapoku.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>kitapoku</Name>
+    <RootNamespace>kitapoku</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="kitapoku.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="icons\" />
+    <Folder Include="log\" />
+    <Folder Include="mynotes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\add.png" />
+    <Content Include="icons\delete.png" />
+    <Content Include="icons\edit.png" />
+    <Content Include="icons\hava.png" />
+    <Content Include="icons\label_load1.png" />
+    <Content Include="icons\label_load2.png" />
+    <Content Include="icons\label_load3.png" />
+    <Content Include="icons\label_load4.png" />
+    <Content Include="icons\notepaper.png" />
+    <Content Include="icons\save.png" />
+    <Content Include="images\plaj2.png" />
+    <Content Include="images\plaj3.png" />
+    <Content Include="images\plaj4.png" />
+    <Content Include="images\plaj5.png" />
+    <Content Include="images\plaj6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
